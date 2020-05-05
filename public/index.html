@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="description" content="A budget tracking progressive web app." />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/icon-192x192.png" />
   <title>Budget Tracker</title>
 </head>
 <body>
@@ -19,7 +21,9 @@
     </div>
 
     <div class="form">
+      <label for="t-name">Name</label>
       <input type="text" id="t-name" placeholder="Name of transaction" />
+      <label for="t-amount">Amount</label>
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
       <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
